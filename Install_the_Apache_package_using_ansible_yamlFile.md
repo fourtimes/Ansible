@@ -1,4 +1,4 @@
-## Installing the package using the Ansible template
+## Installing the Apache2 package using the Ansible template
 
 Filename - `ansible.cfg`
 ```cfg

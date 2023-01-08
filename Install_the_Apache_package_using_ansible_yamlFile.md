@@ -48,3 +48,6 @@ ansible-playbook apache.yml  -K
 -k, --ask-pass: ask for connection password
 -K, --ask-become-pass: ask for privilege escalation password
 ```
+**Output**
+![image](https://user-images.githubusercontent.com/91359308/211209145-946b3969-254b-4f92-96d0-73822b581676.png)
+

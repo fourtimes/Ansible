@@ -39,5 +39,7 @@ Filename - `apache.yml`
 ansible-playbook apache.yml  -K
 ```
 **Note**
-i) -k, --ask-pass: ask for connection password
-ii) -K, --ask-become-pass: ask for privilege escalation password
+```
+-k, --ask-pass: ask for connection password
+-K, --ask-become-pass: ask for privilege escalation password
+```

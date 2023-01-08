@@ -16,7 +16,13 @@ ansible all -m ping
 ```
 After the verification, To install apache2 packages we need to do below files.
 
+**Have to do**
+1. Install the Apache2 Package
+2. Enable the module
+3. Restart the Apache2 Package
+
 Filename - `apache.yml`
+
 ```yml
 ---
 - hosts: 192.168.1.9

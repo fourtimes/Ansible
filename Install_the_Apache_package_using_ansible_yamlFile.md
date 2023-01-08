@@ -21,7 +21,6 @@ After the verification, To install apache2 packages we need to do below files.
 3. Restart the Apache2 Package
 
 Filename - `apache.yml`
-
 ```yml
 ---
 - hosts: 192.168.1.9

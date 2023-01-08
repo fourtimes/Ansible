@@ -7,7 +7,6 @@ inventory = hosts
 ```
 Filename - `hosts`
 ```
-[apache]
 192.168.1.9 ansible_ssh_user=dodo ansible_password=.
 ```
 **To Verify the local connection command**

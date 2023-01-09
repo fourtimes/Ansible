@@ -4,6 +4,12 @@ Filename - `ansible.cfg`
 ```cfg
 [defaults]
 inventory = hosts
+
+[privilege_escalation]
+become=True
+become_method=sudo
+become_user=root
+become_ask_pass=False
 ```
 Filename - `hosts`
 ```

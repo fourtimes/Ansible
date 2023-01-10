@@ -5,7 +5,7 @@
 - hosts
 
 - roles
-    - role1
+    - role
     
             1.default ------- main.yml
         

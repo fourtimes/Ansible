@@ -39,3 +39,6 @@ Filename - `main.yml`
 ```
 ansible-playbook main.yml
 ```
+**Output**
+![image](https://user-images.githubusercontent.com/91359308/211581022-6f3aad2a-6be4-4bba-ae9e-ffd63e224bcd.png)
+

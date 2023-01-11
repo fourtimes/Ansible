@@ -7,7 +7,7 @@
 - roles
     - role
     
-            1.default/main.yml
+            1.defaults/main.yml
         
             2.tasks/main.yml
         

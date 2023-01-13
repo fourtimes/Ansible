@@ -1,0 +1,6 @@
+---
+- hosts: "*"
+  become: yes
+  tasks:
+  roles:
+    - { role: ansible-role-for-nginx  }

@@ -14,7 +14,7 @@
             3.variable/main.yml
  
  - playbook
-      => main.yml
+      ==> `main.yml`
       
       `
      

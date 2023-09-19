@@ -1,9 +1,7 @@
 ## Ansible Template Format
 
-- ansible.cfg
-
 - hosts
-
+- ansible.cfg
 - roles
     - role
     

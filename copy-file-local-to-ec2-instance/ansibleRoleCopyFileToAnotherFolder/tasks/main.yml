@@ -1,0 +1,14 @@
+---
+- name: Copy the local file to the remote EC2 folder
+  copy:
+    src: "{{ local_file }}"  # The local file path you want to copy
+    dest: "{{ remote_path }}"  # The destination folder on EC2
+    mode: '0644'
+
+- name: Move the file to Biodata folder
+  command: mv "{{ remote_path }}" "{{ destination_path }}"  # Moving the file to the Biodata folder
+
+- name: Remove the original file
+  file:
+    path: "{{ remote_path }}"
+    state: absent  # Ensure the original file is removed if not already moved

@@ -1,0 +1,5 @@
+---
+local_file: "/Users/mike/Downloads/biodata.pdf"  # Default local file path
+remote_path: "/home/ubuntu/biodata.pdf"  # Default remote path
+# source_path: "/home/ubuntu/biodata.pdf"
+destination_path: "/home/ubuntu/biodata"

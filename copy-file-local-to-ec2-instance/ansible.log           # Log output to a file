@@ -1,0 +1,115 @@
+2025-03-17 21:13:54,086 p=13255 u=mike n=ansible WARNING| [WARNING]: Unable to parse /Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/hosts               # Path to the inventory file as an inventory source
+
+2025-03-17 21:13:54,086 p=13255 u=mike n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-17 21:13:54,090 p=13255 u=mike n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-17 21:13:54,547 p=13255 u=mike n=ansible ERROR| ERROR! the role 'copy_file_to_ec2' was not found in /Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/roles:/Users/mike/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/Users/mike/Documents/study/ansible/copy-file-one-to-another-folder
+
+The error appears to be in '/Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/ansiblePlaybookCopyFileToAnotherFolder.yml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - copy_file_to_ec2
+      ^ here
+
+2025-03-17 21:14:59,488 p=13914 u=mike n=ansible WARNING| [WARNING]: Unable to parse /Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/hosts               # Path to the inventory file as an inventory source
+
+2025-03-17 21:14:59,488 p=13914 u=mike n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-17 21:14:59,490 p=13914 u=mike n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-17 21:14:59,679 p=13914 u=mike n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: ec2_instances
+
+2025-03-17 21:14:59,680 p=13914 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-17 21:14:59,680 p=13914 u=mike n=ansible INFO| skipping: no hosts matched
+2025-03-17 21:14:59,680 p=13914 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-17 21:16:25,494 p=14819 u=mike n=ansible WARNING| [WARNING]: Unable to parse /Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/hosts               # Path to the inventory file as an inventory source
+
+2025-03-17 21:16:25,494 p=14819 u=mike n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-17 21:16:25,496 p=14819 u=mike n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-17 21:16:25,625 p=14819 u=mike n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: ec2_instances
+
+2025-03-17 21:16:25,625 p=14819 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-17 21:16:25,625 p=14819 u=mike n=ansible INFO| skipping: no hosts matched
+2025-03-17 21:16:25,625 p=14819 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-17 21:17:03,363 p=15219 u=mike n=ansible ERROR| ERROR! the playbook: playbook.yml could not be found
+2025-03-17 21:17:23,132 p=15453 u=mike n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: ec2_instances
+
+2025-03-17 21:17:23,133 p=15453 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-17 21:17:23,133 p=15453 u=mike n=ansible INFO| skipping: no hosts matched
+2025-03-17 21:17:23,133 p=15453 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:03:38,826 p=42031 u=mike n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: ec2_instances
+
+2025-03-18 19:03:38,827 p=42031 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-18 19:03:38,827 p=42031 u=mike n=ansible INFO| skipping: no hosts matched
+2025-03-18 19:03:38,827 p=42031 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:04:01,202 p=42256 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-18 19:04:01,226 p=42256 u=mike n=ansible INFO| TASK [Gathering Facts] ************************************************************************************************************************************************************************
+2025-03-18 19:04:08,800 p=42256 u=mike n=ansible WARNING| [WARNING]: Platform linux on host ansible-ec2 is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-18 19:04:08,801 p=42256 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:04:08,809 p=42256 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Copy a local file to EC2 folder] *******************************************************************************************************************
+2025-03-18 19:04:17,899 p=42256 u=mike n=ansible INFO| changed: [ansible-ec2]
+2025-03-18 19:04:17,910 p=42256 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:04:17,910 p=42256 u=mike n=ansible INFO| ansible-ec2                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-18 19:14:27,776 p=48612 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-18 19:14:27,781 p=48612 u=mike n=ansible INFO| TASK [Gathering Facts] ************************************************************************************************************************************************************************
+2025-03-18 19:14:37,602 p=48612 u=mike n=ansible WARNING| [WARNING]: Platform linux on host ansible-ec2 is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-18 19:14:37,602 p=48612 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:14:37,607 p=48612 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Copy a local file to EC2 folder] *******************************************************************************************************************
+2025-03-18 19:14:43,768 p=48612 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:14:43,778 p=48612 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Move the file to Biodata folder] *******************************************************************************************************************
+2025-03-18 19:14:45,628 p=48612 u=mike n=ansible INFO| fatal: [ansible-ec2]: FAILED! => {"changed": false, "msg": "Source {source_path} not found"}
+2025-03-18 19:14:45,629 p=48612 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:14:45,629 p=48612 u=mike n=ansible INFO| ansible-ec2                : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-18 19:15:37,325 p=49399 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-18 19:15:37,330 p=49399 u=mike n=ansible INFO| TASK [Gathering Facts] ************************************************************************************************************************************************************************
+2025-03-18 19:15:43,337 p=49399 u=mike n=ansible WARNING| [WARNING]: Platform linux on host ansible-ec2 is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-18 19:15:43,337 p=49399 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:15:43,342 p=49399 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Copy a local file to EC2 folder] *******************************************************************************************************************
+2025-03-18 19:15:50,689 p=49399 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:15:50,698 p=49399 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Move the file to Biodata folder] *******************************************************************************************************************
+2025-03-18 19:15:53,645 p=49399 u=mike n=ansible INFO| fatal: [ansible-ec2]: FAILED! => {"changed": false, "msg": "Source {remote_path} not found"}
+2025-03-18 19:15:53,646 p=49399 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:15:53,647 p=49399 u=mike n=ansible INFO| ansible-ec2                : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-18 19:17:16,888 p=50398 u=mike n=ansible ERROR| ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/Users/mike/Documents/study/ansible/copy-file-one-to-another-folder/ansibleRoleCopyFileToAnotherFolder/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Copy a local file to EC2 folder
+  ^ here
+
+2025-03-18 19:18:00,532 p=50838 u=mike n=ansible INFO| PLAY [Copy local file to EC2 instance using a role] *******************************************************************************************************************************************
+2025-03-18 19:18:00,537 p=50838 u=mike n=ansible INFO| TASK [Gathering Facts] ************************************************************************************************************************************************************************
+2025-03-18 19:18:07,135 p=50838 u=mike n=ansible WARNING| [WARNING]: Platform linux on host ansible-ec2 is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-18 19:18:07,135 p=50838 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:18:07,140 p=50838 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Copy the local file to the remote EC2 folder] ******************************************************************************************************
+2025-03-18 19:18:11,606 p=50838 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:18:11,617 p=50838 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Move the file to Biodata folder] *******************************************************************************************************************
+2025-03-18 19:18:14,267 p=50838 u=mike n=ansible INFO| changed: [ansible-ec2]
+2025-03-18 19:18:14,274 p=50838 u=mike n=ansible INFO| TASK [ansibleRoleCopyFileToAnotherFolder : Remove the original file] **************************************************************************************************************************
+2025-03-18 19:18:17,066 p=50838 u=mike n=ansible INFO| ok: [ansible-ec2]
+2025-03-18 19:18:17,075 p=50838 u=mike n=ansible INFO| PLAY RECAP ************************************************************************************************************************************************************************************
+2025-03-18 19:18:17,075 p=50838 u=mike n=ansible INFO| ansible-ec2                : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 07:51:58,377 p=66958 u=mike n=ansible WARNING| [WARNING]: Unable to parse /Users/mike/Documents/study/Ansible/copy-file-local-to-ec2-instance/hosts               # Path to the inventory file as an inventory source
+
+2025-03-19 07:51:58,379 p=66958 u=mike n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 07:51:58,381 p=66958 u=mike n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+

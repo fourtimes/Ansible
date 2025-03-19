@@ -1,5 +1,5 @@
-**_system update and upgrade_**
-```yml
+# system update and upgrade
+---
 - hosts: localhost
   tasks:
   - name: update the localhost
@@ -7,4 +7,3 @@
 
   - name: upgrade the localhost
     shell: sudo apt upgrade -y
-```

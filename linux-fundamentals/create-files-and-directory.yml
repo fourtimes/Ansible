@@ -1,5 +1,4 @@
-_**Create a multiple files**_
-```yml
+# Create a multiple files
 ---
 - hosts: localhost
   tasks:
@@ -10,9 +9,8 @@ _**Create a multiple files**_
       with_items:
         - test01.txt
         - test02.txt
-```
-_**Create a one files with content**_
-```yaml
+
+# Create a one files with content
 ---
 - hosts: localhost
   tasks:
@@ -23,4 +21,3 @@ _**Create a one files with content**_
           ashli
           victor
           joe
-```

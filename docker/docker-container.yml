@@ -1,5 +1,5 @@
-**_List the docker container. start and stop the docker container_**
-```yml
+# List the docker container. start and stop the docker container
+---
 - hosts: localhost
   tasks:
     - name: get container status
@@ -18,4 +18,3 @@
         cmd: sudo docker stop demo
       when: command_output.stdout != "false"
 
-```

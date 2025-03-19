@@ -2,7 +2,7 @@ name: Scheduled Workflow at 7:30 PM UTC
 
 on:
   schedule:
-    - cron: '30 19 * * *'  
+    - cron: '35 19 * * *'  
   workflow_dispatch: 
 
 jobs:

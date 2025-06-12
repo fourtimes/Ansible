@@ -1,0 +1,39 @@
+---
+name: Nginx Installation and Configuration
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python and install Ansible
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' 
+
+      - name: Install Ansible
+        run: |
+          python -m pip install --upgrade pip
+          pip install ansible
+
+      - name: Set up SSH private key for EC2 connection
+        run: |
+          mkdir -p ~/.ssh
+          echo "$EC2_SSH_KEY" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa  
+          ssh-keyscan -H 3.111.29.29 >> ~/.ssh/known_hosts 
+          ssh -i ~/.ssh/id_rsa ubuntu@3.111.29.29 'echo "SSH connection successful!"'
+        env:
+          EC2_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}  
+          
+      - name: Run Ansible playbook
+        run: |
+          ansible-playbook -i hosts.ini playbooks/ansible-playbook-nginxInstallation.yml

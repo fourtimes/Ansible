@@ -1,0 +1,49 @@
+---
+# nginx installation custom configuration
+- name: update & upgrade installed ubuntu packages
+  ansible.builtin.apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: install nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Create the document_root directory
+  file:
+    path: "{{ document_root }}"
+    state: directory
+    mode: '0755'
+
+- name: Synchronize website files
+  ansible.builtin.synchronize:
+    src: ./files/ 
+    dest: "{{ document_root }}/" 
+    mode: push  
+
+- name: Create Nginx configuration for the site
+  template:
+    src: nginx_site_template.conf
+    dest: "{{ nginx_conf }}"
+    mode: '0644'
+
+- name: Enable the site by creating a symlink
+  file:
+    src: "{{ nginx_conf }}"
+    dest: "/etc/nginx/sites-enabled/{{ domain_name }}"
+    state: link
+
+- name: Test the Nginx configuration
+  command: nginx -t
+
+- name: Reload Nginx to apply changes
+  service:
+    name: nginx
+    state: reloaded
+
+- name: Ensure Nginx is started and enabled
+  service:
+    name: nginx
+    enabled: yes
+    state: started

@@ -1,0 +1,6 @@
+---
+- name: Copy local file to EC2 instance using a role
+  hosts: webservers
+  roles:
+    - role: ansible-role-copyFileLocalToEc2
+

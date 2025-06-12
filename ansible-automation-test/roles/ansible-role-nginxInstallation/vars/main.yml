@@ -1,0 +1,5 @@
+---
+domain_name: "demoexample.com"
+document_root: "/var/www/demoexample" 
+index_file: "index.html"
+nginx_conf: "/etc/nginx/sites-available/demoexample.com"

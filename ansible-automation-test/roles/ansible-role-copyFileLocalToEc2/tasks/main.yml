@@ -1,0 +1,8 @@
+---
+- name: Move the file to Biodata folder
+  command: cp "{{ source_path }}" "{{ destination_path }}" 
+
+- name: Remove the original file
+  file:
+    path: "{{ source_path }}"
+    state: absent 
